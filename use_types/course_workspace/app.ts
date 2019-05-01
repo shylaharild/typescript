@@ -119,3 +119,9 @@ if (typeof finalValue == "number") {
 } else if (typeof finalValue == "string") {
     console.log("Final value is a string");
 }
+
+// never type
+// This is use to return nothing. It gives only error!
+function neverReturns(): never {
+    throw new Error('An error!');
+}
