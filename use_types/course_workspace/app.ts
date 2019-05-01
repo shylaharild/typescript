@@ -125,3 +125,9 @@ if (typeof finalValue == "number") {
 function neverReturns(): never {
     throw new Error('An error!');
 }
+
+// Nullable Types
+let canBeNull = 12;
+// canBeNull = null;
+let canAlsoBeNull; //this is undefined not null
+canAlsoBeNull = null;
