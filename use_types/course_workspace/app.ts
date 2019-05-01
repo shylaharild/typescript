@@ -81,9 +81,19 @@ console.log(myMultiply(10, 2));
 let userData: { name: string, age: number } = {
     name: "Sri",
     age: 27
-}
+};
 // The order is not important while the name of the properties in the object important - (name & age) 
 // userData = {
 //     a: "Nick",
 //     b: 27
 // }
+
+// complex object
+let complex: {data: number[], output: (all: boolean) => number[]} = {
+    data: [100, 3.99, 10],
+
+    output: function (all: boolean): number[] {
+        return this.data
+    }
+};
+// complex = {};
