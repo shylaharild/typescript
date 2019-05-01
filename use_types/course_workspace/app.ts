@@ -68,3 +68,11 @@ function multiplication(val_1: number, val_2:number): number {
 }
 // console.log(multiplication(2, 'Sri'));
 console.log(multiplication(2, 4));
+
+
+// function types
+let myMultiply: (val1: number, val2: number) => number;
+// myMultiply = sayHello;
+// myMultiply()
+myMultiply = multiplication;
+console.log(myMultiply(10, 2));
