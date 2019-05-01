@@ -107,3 +107,7 @@ let complex2: Complex = {
         return this.data
     }
 };
+
+let myRealRealAge: number | string = 27;
+myRealRealAge = '27';
+// myRealRealAge = true;
