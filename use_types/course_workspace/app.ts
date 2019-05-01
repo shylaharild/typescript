@@ -127,7 +127,10 @@ function neverReturns(): never {
 }
 
 // Nullable Types
-let canBeNull = 12;
-// canBeNull = null;
+// let canBeNull = 12;
+let canBeNull: number | null = 12;
+canBeNull = null;
 let canAlsoBeNull; //this is undefined not null
 canAlsoBeNull = null;
+let canThisBeAny = null; // this will be only of type null
+// canThisBeAny = 12;   
