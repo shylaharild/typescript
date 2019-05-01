@@ -36,3 +36,63 @@ var car = "BMW";
 console.log(car);
 car = { brand: "BMW", series: 7 };
 console.log(car);
+// functions
+function returnMyName() {
+    return myName;
+}
+console.log(returnMyName());
+// void
+function sayHello() {
+    console.log("Hello");
+    // return myName;
+}
+// argument types
+function multiply(val_1, val_2) {
+    return val_1 * val_2;
+}
+console.log(multiply(2, 'Sri')); //js provides lof as NaN (Not a Number)
+function multiplication(val_1, val_2) {
+    return val_1 * val_2;
+}
+// console.log(multiplication(2, 'Sri'));
+console.log(multiplication(2, 4));
+// function types
+var myMultiply; // the order of the arguments given in important here
+// myMultiply = sayHello;
+// myMultiply()
+myMultiply = multiplication;
+console.log(myMultiply(10, 2));
+// objects
+var userData = {
+    name: "Sri",
+    age: 27
+};
+// The order is not important while the name of the properties in the object important - (name & age) 
+// userData = {
+//     a: "Nick",
+//     b: 27
+// }
+// complex object
+var complex = {
+    data: [100, 3.99, 10],
+    output: function (all) {
+        return this.data;
+    }
+};
+var complex2 = {
+    data: [100, 3.99, 10],
+    output: function (all) {
+        return this.data;
+    }
+};
+var myRealRealAge = 27;
+myRealRealAge = '27';
+// myRealRealAge = true;
+// check types
+var finalValue = "A String";
+if (typeof finalValue == "number") {
+    console.log("Final value is a number");
+}
+else if (typeof finalValue == "string") {
+    console.log("Final value is a string");
+}

@@ -111,3 +111,11 @@ let complex2: Complex = {
 let myRealRealAge: number | string = 27;
 myRealRealAge = '27';
 // myRealRealAge = true;
+
+// check types
+let finalValue = "A String";
+if (typeof finalValue == "number") {
+    console.log("Final value is a number");
+} else if (typeof finalValue == "string") {
+    console.log("Final value is a string");
+}
