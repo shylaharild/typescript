@@ -27,3 +27,20 @@ hobbies = [true];
 
 // tuples
 let add: [string, number] = ["Malibu Point", 10880];
+
+// enums
+enum Colour {
+    Red, //0
+    Blue = 100, //100
+    Green = 2, //101
+    Orange //3
+}
+
+let myColour: Colour = Colour.Green
+console.log(myColour)
+
+// any
+let car: any = "BMW";
+console.log(car);
+car = { brand: "BMW", series: 7};
+console.log(car);
