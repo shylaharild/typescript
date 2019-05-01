@@ -1,0 +1,13 @@
+How to use
+
+Run "npm init" to initialize the folder with npm. It will create the package.json file
+
+Run "tsc init" to initialize the folder with TypeScript Complier. It will create tsconfig.json file
+
+Run "npm install lite-server --save-dev" to install lite-server dependency and then to sabe that dependency in to package.json
+
+Run "npm install" to install the required dependencies
+
+Run "tsc" to compile the TypeScript code
+
+Run "npm start" to run the development server (lite-server)
