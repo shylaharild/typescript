@@ -71,8 +71,19 @@ console.log(multiplication(2, 4));
 
 
 // function types
-let myMultiply: (val1: number, val2: number) => number;
+let myMultiply: (val1: number, val2: number) => number; // the order of the arguments given in important here
 // myMultiply = sayHello;
 // myMultiply()
 myMultiply = multiplication;
 console.log(myMultiply(10, 2));
+
+// objects
+let userData: { name: string, age: number } = {
+    name: "Sri",
+    age: 27
+}
+// The order is not important while the name of the properties in the object important - (name & age) 
+// userData = {
+//     a: "Nick",
+//     b: 27
+// }
