@@ -44,3 +44,27 @@ let car: any = "BMW";
 console.log(car);
 car = { brand: "BMW", series: 7};
 console.log(car);
+
+// functions
+function returnMyName(): string { //the type here refers only to the value that is returned
+    return myName;
+}
+console.log(returnMyName());
+
+// void
+function sayHello(): void { // cannot return anything if void used 
+    console.log("Hello");
+    // return myName;
+}
+
+// argument types
+function multiply(val_1, val_2): number {
+    return val_1 * val_2;
+}
+console.log(multiply(2, 'Sri')); //js provides lof as NaN (Not a Number)
+
+function multiplication(val_1: number, val_2:number): number {
+    return val_1 * val_2;
+}
+// console.log(multiplication(2, 'Sri'));
+console.log(multiplication(2, 4));
