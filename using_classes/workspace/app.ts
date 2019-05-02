@@ -25,8 +25,13 @@ person.printAge();
 
 // Inheritance
 class Sri extends Person {
-    name = "Sri";
+    // name = "Sri";
+
+    constructor(user_name: string) {
+        super("Sri", user_name);
+        this.age = 30;
+    }
 }
 
-const sri = new Sri("Saran", "saran");
+const sri = new Sri("saran");
 console.log(sri);

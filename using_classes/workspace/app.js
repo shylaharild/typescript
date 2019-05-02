@@ -35,12 +35,13 @@ person.printAge();
 // Inheritance
 var Sri = /** @class */ (function (_super) {
     __extends(Sri, _super);
-    function Sri() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.name = "Sri";
+    // name = "Sri";
+    function Sri(user_name) {
+        var _this = _super.call(this, "Sri", user_name) || this;
+        _this.age = 30;
         return _this;
     }
     return Sri;
 }(Person));
-var sri = new Sri("Saran", "saran");
+var sri = new Sri("saran");
 console.log(sri);
