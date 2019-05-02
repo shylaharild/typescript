@@ -110,4 +110,4 @@ console.log(greeting);
 const greet_template = `This is the heading!
 I'm ${coolName}
 I'm cool!`;
-console.log(greet_template)
+console.log(greet_template);
