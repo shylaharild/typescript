@@ -55,3 +55,28 @@ const countdown = (val1: number = 10): void => {
 };
 countdown(20);
 countdown();
+
+// Rest & Spread
+console.log("Rest and Spread!");
+const numbers = [1, 10, 99, -5];
+console.log(Math.max(10, 99, -789, 990)); // the numbers here are just list of numbers not array
+// console.log(Math.max(numbers));  // This wont work as the numbers are in array which is an object
+console.log(Math.max(...numbers)); // spread operator ... will spread the array into list
+
+//  when ... is used inside the function to build the parameter dynamically, it becomes Rest Operator
+function makeArray(name: string, ...args: number[]) {
+    return args;
+}
+console.log(makeArray("Sri", 2, 5, 8));
+
+// Rest Parameters & Tuples
+function printInformation(name: string, age: number) {
+    console.log('My name is ' + name + ' and my age is ' + age + 'years');
+}
+printInformation('Sri', 27);
+
+function printInfo(...info: [string, number]) {
+    console.log('My name is ' + info[0] + ' and my age is ' + info[1] + 'years');
+}
+printInfo('Sri', 27);
+
