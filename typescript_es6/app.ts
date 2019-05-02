@@ -101,3 +101,13 @@ console.log(userName, userAge);
 
 const {name: myName, age: myAge} = userData; // destructuring is using {} on the left side like this for objects
 console.log(myName, myAge);
+
+// Template Literals
+const coolName = 'Sri';
+const greeting = "Hello, I'm " + coolName + " and it is a cool name!";
+console.log(greeting);
+
+const greet_template = `This is the heading!
+I'm ${coolName}
+I'm cool!`;
+console.log(greet_template)
