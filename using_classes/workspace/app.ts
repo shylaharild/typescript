@@ -22,3 +22,11 @@ const person = new Person('Sri', 'sri.l')
 console.log(person.name, person.userName);
 person.printAge();
 // person.setType('DevOps'); // this won't work with private method
+
+// Inheritance
+class Sri extends Person {
+    name = "Sri";
+}
+
+const sri = new Sri("Saran", "saran");
+console.log(sri);
