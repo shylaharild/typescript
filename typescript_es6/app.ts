@@ -80,3 +80,24 @@ function printInfo(...info: [string, number]) {
 }
 printInfo('Sri', 27);
 
+// Destructuring Arrays
+console.log("Destructuring Arrays!");
+const myHobbies = ['Cooking', 'Sports'];
+    // this is the usual way
+const hobby1 = myHobbies[0];
+const hobby2 = myHobbies[1];
+console.log(hobby1, hobby2);
+
+const [hobby_1, hobby_2] = myHobbies // destructuring is using [] on the left side like this for arrays
+console.log(hobby_1, hobby_2);
+
+// Destructuring Objects
+console.log("Destructuring Ojects!");
+const userData = { name: 'Sri', age: 27};
+    // this is the usual way
+const userName = userData.name;
+const userAge = userData.age;
+console.log(userName, userAge);
+
+const {name: myName, age: myAge} = userData; // destructuring is using {} on the left side like this for objects
+console.log(myName, myAge);
