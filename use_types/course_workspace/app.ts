@@ -1,5 +1,6 @@
 console.log("It works!");
 
+
 // strings
 let myName = 'Sri';
 // myName = 25;
