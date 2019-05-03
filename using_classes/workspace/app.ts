@@ -35,3 +35,27 @@ class Sri extends Person {
 
 const sri = new Sri("saran");
 console.log(sri);
+
+// Getters & Setters
+class Plant {
+    private _species: string = "Initial";
+
+    get species() {
+        return this._species;
+    }
+
+    set species(value: string) {
+        if(value.length > 3) {
+            this._species = value;
+        } else {
+            this._species = "Default";
+        }
+    }
+}
+
+const plant = new Plant();
+console.log(plant.species);
+plant.species = "AB";
+console.log(plant.species);
+plant.species = "Green Plant";
+console.log(plant.species);
